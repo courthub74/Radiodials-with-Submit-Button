@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Dials</title>
+</head>
+<body>
+    <h1>The Radio Dials</h1>
+
+    <!-- The Div for the buttons -->
+    <div id="radios">
+        <input type="radio" name="radio" id="one" value="One">Button 1</input>
+        <input type="radio" name="radio" id="two" value="Two">Button 2</input>
+        <input type="radio" name="radio" id="three" value="Three">Button 3</input>
+    </div>
+
+    <!-- inner HTML to change -->
+    <p id="show"></p>
+
+    <!-- Submit Button -->
+    <input type="submit" id="submit" onclick="myFunction()"></input>
+    <!-- create a function that takes the output of the radio button selected
+        and displays it through an alert -->
+
+    <h1>The Radio Dials as Buttons</h1>
+    <div id="radiobuttons">
+        <button type="radio" name="radio" id="uno" value="Uno">Button 1</button>
+        <button type="radio" name="radio" id="dos" value="Dos">Button 2</button>
+        <button type="radio" name="radio" id="tres" value="Tres">Button 3</button>
+    </div>
+
+    <!-- Submit Button -->
+    <input type="submit" id="submitbutton" onclick="buttonFunction()">
+    
+    <!-- JS Links-->
+    <!-- <script src="radiodial.js"></script> -->
+    <script>
+        // Function for Dials
+        function myFunction(){
+            // get values by name if checked
+            var value = document.querySelector('input[name="radio"]:checked').value;
+            document.getElementById("show").innerHTML = value;
+            console.log(value, ' was selected!');
+        }
+        // Function for Buttons
+        function buttonFunction(){
+            
+        }
+    </script>
+</body>
+</html>
