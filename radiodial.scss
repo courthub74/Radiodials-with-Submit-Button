@@ -1,0 +1,29 @@
+*{
+  box-sizing: border-box;
+  font-family: sans-serif;
+  body {
+    background-color: #1E2B35;
+    overflow: hidden;
+  }
+  .radiodials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    #radios{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: aqua;
+        .input-container {
+            position: relative;
+            height: 7rem;
+            width: 7rem;
+            margin: 0.5rem;
+            background-color:green ;
+            input {
+                border: white 1px solid;
+            }
+        }
+    }
+  }
+}

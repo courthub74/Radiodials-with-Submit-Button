@@ -5,34 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Radio Dials</title>
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="radiodial.css">
 </head>
 <body>
-    <h1>The Radio Dials</h1>
 
-    <!-- The Div for the buttons -->
-    <div id="radios">
-        <input type="radio" name="radio" id="one" value="One">Button 1</input>
-        <input type="radio" name="radio" id="two" value="Two">Button 2</input>
-        <input type="radio" name="radio" id="three" value="Three">Button 3</input>
+    <div class="radiodials">
+
+        <!-- The Div for the buttons -->
+        <div id="radios">
+            <h1>The Radio Dials</h1>
+            <div class="input-container">
+                <input type="radio" name="radio" id="one" value="One">Button 1</input>
+            </div>
+            <input type="radio" name="radio" id="two" value="Two">Button 2</input>
+            <input type="radio" name="radio" id="three" value="Three">Button 3</input>
+            <!-- Submit Button -->
+            <input type="submit" id="submit" onclick="myFunction()"></input>
+            <!-- create a function that takes the output of the radio button selected
+                and displays it through an alert -->
+        </div>
+
+        <!-- inner HTML to change -->
+        <p id="show"></p>
     </div>
 
-    <!-- inner HTML to change -->
-    <p id="show"></p>
 
-    <!-- Submit Button -->
-    <input type="submit" id="submit" onclick="myFunction()"></input>
-    <!-- create a function that takes the output of the radio button selected
-        and displays it through an alert -->
 
-    <h1>The Radio Dials as Buttons</h1>
-    <div id="radiobuttons">
-        <button type="radio" name="radio" id="uno" value="Uno">Button 1</button>
-        <button type="radio" name="radio" id="dos" value="Dos">Button 2</button>
-        <button type="radio" name="radio" id="tres" value="Tres">Button 3</button>
+    <div class="radiobuttons">
+        <h1>The Radio Dials as Buttons</h1>
+        <div id="radiobuttons">
+            <input type="radio" name="radiobutton" id="uno" value="Uno">Button 1</input>
+            <button type="radio" name="radiobutton" id="dos" value="Dos">Button 2</button>
+            <button type="radio" name="radiobutton" id="tres" value="Tres">Button 3</button>
+        </div>
+
+        <!-- inner HTML to change -->
+        <p id="buttonshow"></p>
+
+        <!-- Submit Button -->
+        <input type="submit" id="submitbutton" onclick="buttonFunction()">
     </div>
-
-    <!-- Submit Button -->
-    <input type="submit" id="submitbutton" onclick="buttonFunction()">
     
     <!-- JS Links-->
     <!-- <script src="radiodial.js"></script> -->
@@ -46,7 +60,11 @@
         }
         // Function for Buttons
         function buttonFunction(){
-            
+            console.log("Button Submit Pressed");
+            // get button values by name if checked/pressed
+            var valuebuttons = document.querySelector('input[name="radiobutton"]:checked').value;
+            document.getElementById("buttonshow").innerHTML = valuebuttons;
+            console.log(valuebuttons, ' was selected!');
         }
     </script>
 </body>

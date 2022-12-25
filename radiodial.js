@@ -22,3 +22,8 @@ radio.addEventListener('click', (e) =>{
 function button1(){
     alert("Button1");
 }
+
+// buttons dial js
+
+// get the button radios through the DOM
+let buttons = document.getElementById("radiobuttons").value;
