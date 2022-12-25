@@ -15,41 +15,56 @@
 
         <!-- The Div for the buttons -->
         <div id="radios">
+
             <h1>The Radio Dials</h1>
+
+            <!-- BUTTON 1 -->
             <div class="input-container">
-                <input type="radio" name="radio" id="one" value="One">Button 1</input>
+                <!-- just the check box or circle part THE INPUT -->
+                <input type="radio" name="radio" id="one" value="One"></input>
+                <!-- Below is basically the label for the input -->
+                <div class="radio-tile">
+                    <label for="button1">Button 1</label>
+                </div>
             </div>
-            <input type="radio" name="radio" id="two" value="Two">Button 2</input>
-            <input type="radio" name="radio" id="three" value="Three">Button 3</input>
+
+            <!-- BUTTON 2 -->
+            <div class="input-container">
+                <!-- just the check box or circle part THE INPUT -->
+                <input type="radio" name="radio" id="two" value="Two"></input>
+                <!-- Below is basically the label for the input -->
+                <div class="radio-tile">
+                    <label for="button2">Button 2</label>
+                </div>
+            </div>
+
+            <!-- BUTTON 3 -->
+            <div class="input-container">
+                <input type="radio" name="radio" id="three" value="Three"></input>
+                <!-- Below is basically the label for the input -->
+                <div class="radio-tile">
+                    <label for="button3">Button 3</label>
+                </div>
+            </div>
+
             <!-- Submit Button -->
-            <input type="submit" id="submit" onclick="myFunction()"></input>
+            <div class="submit-container">
+                <input type="submit" id="submit" onclick="myFunction()"></input>
+                <div class="submit-tile">
+                    <label for="submit">Submit</label>
+                </div>
+            </div>
             <!-- create a function that takes the output of the radio button selected
                 and displays it through an alert -->
         </div>
 
         <!-- inner HTML to change -->
-        <p id="show"></p>
-    </div>
-
-
-
-    <div class="radiobuttons">
-        <h1>The Radio Dials as Buttons</h1>
-        <div id="radiobuttons">
-            <input type="radio" name="radiobutton" id="uno" value="Uno">Button 1</input>
-            <button type="radio" name="radiobutton" id="dos" value="Dos">Button 2</button>
-            <button type="radio" name="radiobutton" id="tres" value="Tres">Button 3</button>
+        <div class="output-container">
+            <p id="show"></p>
         </div>
-
-        <!-- inner HTML to change -->
-        <p id="buttonshow"></p>
-
-        <!-- Submit Button -->
-        <input type="submit" id="submitbutton" onclick="buttonFunction()">
     </div>
-    
-    <!-- JS Links-->
-    <!-- <script src="radiodial.js"></script> -->
+
+
     <script>
         // Function for Dials
         function myFunction(){
@@ -57,14 +72,6 @@
             var value = document.querySelector('input[name="radio"]:checked').value;
             document.getElementById("show").innerHTML = value;
             console.log(value, ' was selected!');
-        }
-        // Function for Buttons
-        function buttonFunction(){
-            console.log("Button Submit Pressed");
-            // get button values by name if checked/pressed
-            var valuebuttons = document.querySelector('input[name="radiobutton"]:checked').value;
-            document.getElementById("buttonshow").innerHTML = valuebuttons;
-            console.log(valuebuttons, ' was selected!');
         }
     </script>
 </body>
