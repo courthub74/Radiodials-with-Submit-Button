@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+* body {
+  overflow: hidden;
+}
+* body #timesform {
+  height: 100vh;
+  background-color: rgb(78, 150, 173);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+* body #timesform #timebuttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+* body #timesform #timebuttons .input-container {
+  position: relative;
+  width: 6rem;
+  height: 3rem;
+  border: black 1px solid;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+* body #timesform #timebuttons .input-container input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0;
+}
+* body #timesform #timebuttons .input-container .radio-tile {
+  background-color: rgb(6, 68, 6);
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+}
+* body #timesform #timebuttons #submit {
+  background-color: bisque;
+  width: 6rem;
+  height: 4rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+* body #timesform .subbutton {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+* body #timesform .subbutton #submit {
+  background-color: bisque;
+  width: 6rem;
+  height: 4rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}/*# sourceMappingURL=times.css.map */
