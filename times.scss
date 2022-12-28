@@ -39,30 +39,61 @@
                     border-radius: 5px;
                 }
             }
-            #submit {
-                background-color: bisque;
-                width: 6rem;
-                height: 4rem;
-                border-radius: 5px;
-                border: none;
-                cursor: pointer;
-            }
+            // #submit {
+            //     background-color: bisque;
+            //     width: 6rem;
+            //     height: 4rem;
+            //     border-radius: 5px;
+            //     border: none;
+            //     cursor: pointer;
+            // }
         }
         .subbutton {
             // background-color: aqua;
             display: flex;
             justify-content: center;
             padding-top: 100px;
-            #submit {
-                background-color: bisque;
-                width: 6rem;
-                height: 4rem;
-                border-radius: 5px;
-                border: none;
-                cursor: pointer;
+            width: 100%;
+            gap: 100px;
+            #button {
+                // background-color: red;
+                padding-left: 100px;
+                width: 100px;
+                height: 100px;
+                #submit {
+                    position: absolute;
+                    background-color: bisque;
+                    width: 6rem;
+                    height: 4rem;
+                    border-radius: 5px;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+            #alert {
+                // background-color: lightgreen;
+                padding-left: 80px;
+                width: 100px;
+                #submitalert {
+                    font-weight: bold;
+                    color: rgb(6, 68, 6);
+                    width: 300px;
+                    transition: all 3s ease-in;
+                }
             }
         }
     }
     
   }
 }
+
+
+/* #submit {
+    position: absolute;
+    background-color: bisque;
+    width: 6rem;
+    height: 4rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}*/

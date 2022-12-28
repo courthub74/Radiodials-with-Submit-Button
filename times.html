@@ -26,7 +26,7 @@
             <!-- 3 PM -->
             <div class="input-container" id="containerthree">
                 <input type="radio" name="timebutt" id="three" class="hour" value="3:00PM"></input>
-                <div class="radio-tile">
+                <div class="radio-tile" id="tilethree">
                     <label for="3pm" id="labelthree">3:00PM</label>
                 </div>
             </div>
@@ -62,16 +62,17 @@
                     <label for="7pm" id="labelseven">7:00PM</label>
                 </div>
             </div>  
-            
-            <!-- Submit Button -->
-            <!-- <div class="subbutton">
-                <button class="submit" type="submit" id="submit">Submit</button>
-            </div> -->
         </div>
 
         <!-- Submit Button -->
         <div class="subbutton">
-            <button class="submit" type="submit" id="submit">Submit</button>
+            <div id="button">
+                <button class="submit" type="submit" id="submit">Submit</button>
+            </div>
+            <!-- Submitted Output -->
+            <div id="alert">
+                <p id="submitalert"></p>
+            </div>
         </div>
     </form>
 </div>
